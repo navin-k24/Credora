@@ -1,7 +1,8 @@
 # Credora - Decentralized Certificate Issuance & Verification Platform
 
 > **Level 4 - Green Belt Submission**  
-> **Built on Stellar with Soroban Smart Contracts**
+> **Built on Stellar with Soroban Smart Contracts**  
+> 🔗 **Live Demo**: [https://credora-sage.vercel.app/](https://credora-sage.vercel.app/)
 
 Credora is a production-ready, decentralized credential registry built on the Stellar network. It enables accredited educational institutions, universities, and independent instructors to issue tamper-resistant digital certificates directly on-chain. Using client-side cryptographic document hashing (SHA-256), employers, students, and verifiers can confirm the authenticity and validity of credentials in seconds without exposing confidential student records on the public ledger.
 
