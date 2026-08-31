@@ -120,13 +120,25 @@ export const App: React.FC = () => {
               </div>
             )}
             {!editingContract && (
-              <button
-                onClick={() => { setTempContractId(contractId); setEditingContract(true); }}
-                className="text-slate-500 hover:text-slate-300 ml-1"
-                title="Change Contract ID"
-              >
-                <Edit2 className="h-3 w-3" />
-              </button>
+              <>
+                <button
+                  onClick={() => { setTempContractId(contractId); setEditingContract(true); }}
+                  className="text-slate-500 hover:text-slate-300 ml-0.5"
+                  title="Change Contract ID"
+                >
+                  <Edit2 className="h-3 w-3" />
+                </button>
+                <a
+                  href={`https://stellar.expert/explorer/testnet/contract/${contractId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 ml-2 px-2 py-0.5 bg-violet-950/80 hover:bg-violet-900 border border-violet-700/60 text-violet-300 rounded text-[11px] font-semibold transition"
+                  title="View Contract on Stellar Expert Explorer"
+                >
+                  <span>Stellar Expert</span>
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </>
             )}
           </div>
         </div>
@@ -191,7 +203,7 @@ export const App: React.FC = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-1">
+            <nav className="hidden md:flex items-center space-x-1">
               <button
                 onClick={() => setActiveTab('verify')}
                 className={`px-4 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-2 ${
@@ -239,6 +251,19 @@ export const App: React.FC = () => {
                 <BookOpen className="h-4 w-4" />
                 Guide & Proof
               </button>
+
+              <div className="h-5 w-px bg-slate-800 mx-2"></div>
+
+              {/* Stellar Expert Button */}
+              <a
+                href={`https://stellar.expert/explorer/testnet/contract/${contractId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 bg-violet-600/10 hover:bg-violet-600/25 text-violet-300 text-xs font-semibold rounded-lg border border-violet-500/30 transition flex items-center gap-1.5 shadow-sm"
+              >
+                <span>Stellar Expert</span>
+                <ExternalLink className="h-3.5 w-3.5 text-violet-400" />
+              </a>
             </nav>
 
             {/* Mobile menu button */}
@@ -292,6 +317,15 @@ export const App: React.FC = () => {
               <BookOpen className="h-4 w-4" />
               Guide & Proof
             </button>
+            <a
+              href={`https://stellar.expert/explorer/testnet/contract/${contractId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-left px-3 py-2.5 rounded-lg text-sm font-semibold flex items-center justify-between text-violet-300 bg-violet-950/40 border border-violet-800/40"
+            >
+              <span>View on Stellar Expert Explorer</span>
+              <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
         )}
       </header>
