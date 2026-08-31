@@ -20,7 +20,7 @@ import {
   Activity
 } from 'lucide-react';
 
-const DEFAULT_CONTRACT_ID = 'CBQ4O2NVE22U3QG5X7M4C6LBNN7K4D3N5X4P3M2V1L0Z9X8C7V6B5N4M';
+const DEFAULT_CONTRACT_ID = 'CB4Z56EYHH4VYBYJUD624TMD3DOHXCXONNJT5OIGXRC4O7FU6CZ7OXKU';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'verify' | 'issuer' | 'admin' | 'guide'>('verify');

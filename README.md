@@ -38,6 +38,15 @@ The Soroban smart contract is written in Rust and implements the following inter
 
 ---
 
+## 🌐 Deployed Smart Contract (Stellar Testnet)
+
+- **Contract ID**: [`CB4Z56EYHH4VYBYJUD624TMD3DOHXCXONNJT5OIGXRC4O7FU6CZ7OXKU`](https://stellar.expert/explorer/testnet/contract/CB4Z56EYHH4VYBYJUD624TMD3DOHXCXONNJT5OIGXRC4O7FU6CZ7OXKU)
+- **Deployment Transaction**: [`303ce158aead27c6617864234ed48a822426ed98fb107a8fd710de94cc749953`](https://stellar.expert/explorer/testnet/tx/303ce158aead27c6617864234ed48a822426ed98fb107a8fd710de94cc749953)
+- **WASM Hash**: `ca5e925dabfcc85184821309a13d97ff01cf8b1f029a80b413a6327fa79104f0`
+- **Stellar Lab**: [Inspect Contract on Stellar Lab](https://lab.stellar.org/r/testnet/contract/CB4Z56EYHH4VYBYJUD624TMD3DOHXCXONNJT5OIGXRC4O7FU6CZ7OXKU)
+
+---
+
 ## 💻 Tech Stack
 
 - **Blockchain**: Stellar Network (Soroban Smart Contracts v27)
